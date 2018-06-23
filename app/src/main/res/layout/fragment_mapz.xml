@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.azconnects.transfit.Mapz">
+
+    <com.google.android.gms.maps.MapView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mapView">
+    </com.google.android.gms.maps.MapView>
+
+
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:id="@+id/firstloccard"
+    android:layout_marginLeft="20dp"
+    android:background="@color/white"
+    android:layout_marginRight="20dp">
+    <fragment
+        android:id="@+id/place_autocomplete_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+        />
+</android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/locationcard"
+        android:visibility="gone"
+        android:layout_marginTop="40dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/fromloc_et"
+                android:hint="From Location"
+                android:textAlignment="center"
+                android:background="@color/white"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_below="@+id/fromloc_et"
+                android:id="@+id/view"
+                android:background="@color/pink"
+                android:layout_margin="5dp"
+                android:layout_height="2dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/toloc"
+                android:textAlignment="center"
+                android:hint="Where to?"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/view"
+                android:background="@color/white"/>
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/confirm_req_btn"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Confirm"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:background="@color/app_color"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.azconnects.transfit.ProfileManagement.Upload_Regbook">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+       <de.hdodenhof.circleimageview.CircleImageView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="40dp"
+           android:id="@+id/logo"
+           android:src="@drawable/logo"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo"
+            android:id="@+id/regbook"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/regbook"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/upload_regbook_btn"
+            android:layout_below="@+id/regbook"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:padding="10dp"
+            android:text="Upload Photo"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:background="@drawable/white_transparent_background"
+            android:layout_marginTop="30dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/upload_regbook_btn"
+            android:id="@+id/upload_regbook_nextbtn"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:padding="10dp"
+            android:text="Done"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:background="@drawable/white_transparent_background"
+            android:layout_marginTop="30dp"/>
+     </RelativeLayout>
+        </ScrollView>
+</RelativeLayout>
