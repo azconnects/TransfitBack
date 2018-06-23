@@ -10,4 +10,6 @@
     <color name="hintColor">#b7b5b5</color>
     <color name="text_color">#8f8989</color>
     <color name="background_line">#a9a3a3</color>
+    <color name="separator">#D0D4D9</color>
+    <color name="whitegrey">#F9F9F9</color>
 </resources>

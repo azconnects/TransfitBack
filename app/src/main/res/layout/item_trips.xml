@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_grey_bottom_border"
+    android:layout_margin="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_friendsitem"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/profilepic" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/iv_friendsitem">
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/rl"
+            android:layout_below="@+id/tv_username">
+            <TextView
+                android:id="@+id/tv_pickup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="40dp"
+                android:text="Jl. Pickup Adrress No.5"
+                />
+
+            <View
+                android:id="@+id/dot_pick"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/dot_pickup" />
+
+            <View
+                android:id="@+id/separator"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/tv_pickup"
+                android:layout_marginTop="20dp"
+                android:background="@color/black"/>
+
+            <TextView
+                android:id="@+id/tv_dropoff"
+                android:layout_width="match_parent"
+                android:layout_below="@id/separator"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="40dp"
+                android:text="Jl. Pickup Adrress No.5"
+                />
+
+            <View
+                android:id="@+id/dot_dropoff"
+                android:layout_width="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/separator"
+                android:layout_height="10dp"
+                android:background="@drawable/dot_dropoff" />
+
+        </RelativeLayout>
+
+
+
+        <Button
+            android:id="@+id/acceptbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_below="@id/rl"
+            android:layout_marginTop="20dp"
+            android:text="Accept" />
+        <Button
+            android:id="@+id/rejectbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_below="@id/rl"
+            android:layout_toRightOf="@+id/acceptbtn"
+            android:layout_marginTop="20dp"
+            android:text="Cancel" />
+
+        <TextView
+            android:id="@+id/tv_time_friendsitem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/black"
+            android:drawablePadding="4dp"
+            android:text="5 min" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/rejectbtn"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/friends_view"
+            android:layout_marginTop="8dp"
+            android:background="#000000" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
