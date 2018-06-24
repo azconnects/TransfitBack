@@ -1,0 +1,80 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_color"
+    tools:context="com.example.azconnects.transfit.RiderContactFrag">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/profilepic"
+        android:src="@drawable/heart"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NAME"
+        android:id="@+id/name"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/profilepic"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/separator"
+        android:background="@color/white"
+        android:layout_below="@+id/name"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Contact to negotiate:"
+        android:layout_marginLeft="20dp"
+        android:textSize="18sp"
+        android:id="@+id/contacttext"
+        android:textColor="@color/white"
+        android:layout_below="@id/separator"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contacttext"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/sendsmsbtn"
+        android:layout_marginRight="20dp"
+        android:text="Send sms"
+        android:drawableRight="@drawable/sms_icon"
+        android:textColor="@color/white"
+        android:background="@drawable/white_transparent_background"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sendsmsbtn"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Give a phone call"
+        android:drawableRight="@drawable/call_icon"
+        android:id="@+id/calbtn"
+        android:textColor="@color/white"
+        android:background="@drawable/white_transparent_background"
+        />
+
+
+
+
+</RelativeLayout>
