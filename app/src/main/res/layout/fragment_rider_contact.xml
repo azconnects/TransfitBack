@@ -7,12 +7,21 @@
     tools:context="com.example.azconnects.transfit.RiderContactFrag">
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:id="@+id/profilepic"
-        android:src="@drawable/heart"
+        android:src="@drawable/profilepic"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"/>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:id="@+id/roleimage"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="17dp"
+        android:layout_toEndOf="@+id/name"
+        android:src="@drawable/car_icon" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -73,6 +82,12 @@
         android:textColor="@color/white"
         android:background="@drawable/white_transparent_background"
         />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/send"
+        android:layout_below="@+id/calbtn"/>
 
 
 

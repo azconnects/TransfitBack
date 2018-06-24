@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_color"
+    tools:context="com.example.azconnects.transfit.Pickavailer">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="300dp"
+       android:padding="10dp">
+
+   <com.google.android.gms.maps.MapView
+       android:layout_width="match_parent"
+       android:id="@+id/mapView"
+       android:layout_height="match_parent">
+   </com.google.android.gms.maps.MapView>
+   </RelativeLayout>
+
+
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@drawable/white_transparent_background"
+       android:text="Start Ride"
+       android:id="@+id/startride"
+       android:textColor="@color/white"
+       android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
