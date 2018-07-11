@@ -86,7 +86,7 @@
             android:background="@color/white"
             android:hint="Mobile Number"
             android:focusable="true"
-            android:inputType="text"
+            android:inputType="number"
             android:padding="10dp"
             android:textAlignment="center"
             android:textColorHint="@color/hintColor"

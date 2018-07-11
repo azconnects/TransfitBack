@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/app_color"
+    android:padding="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/rl"
+        android:background="@color/white"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Settings"
+        android:id="@+id/settngs"
+        android:layout_centerInParent="true"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/close_icon"
+            android:id="@+id/close"
+            android:layout_toRightOf="@+id/settngs"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="i want to update my cell number"
+            android:textSize="15sp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/update_cell_numbr_txt"
+            android:textAlignment="center"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/app_color"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="i want to change my vehicle"
+            android:layout_marginTop="5dp"
+            android:layout_centerInParent="true"
+            android:textSize="15sp"
+            android:id="@+id/update_vehicle_txt"
+            android:layout_below="@+id/update_cell_numbr_txt"
+            android:textAlignment="center"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

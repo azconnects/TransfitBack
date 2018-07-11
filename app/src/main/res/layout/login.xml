@@ -97,7 +97,7 @@
 
 
             <TextView
-                android:id="@+id/fragment_login_tv_retrieve"
+                android:id="@+id/forget_password_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Forgot Password ?"

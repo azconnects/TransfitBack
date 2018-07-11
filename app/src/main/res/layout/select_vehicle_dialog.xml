@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@color/app_color">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/white"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Vehicle:"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:id="@+id/maintxt"
+        android:textAlignment="center"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/maintxt"
+        android:id="@+id/carlinear"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Car:"
+        android:textSize="17sp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/cartxt"
+        android:layout_below="@+id/maintxt"/>
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/carradio_btn"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/carlinear"
+        android:id="@+id/bikelinear"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bike:"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/biketxt"
+            android:layout_below="@+id/maintxt"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bikeradio_btn"
+            android:layout_marginLeft="10dp"
+            />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -29,7 +29,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/white_transparent_background"
+        android:background="@color/fbcolor"
         android:text="Accept"
         android:id="@+id/agreement_accept_btn"
         android:textColor="@color/white"
@@ -38,7 +38,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/white_transparent_background"
+        android:background="@color/fbcolor"
         android:text="NOt Accept"
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"

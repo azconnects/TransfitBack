@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/rounded_edge"
-
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar"
     android:layout_margin="20dp">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/iv_friendsitem"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:src="@drawable/profilepic"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/profilepic" />
+         />
 
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -45,13 +46,13 @@
                 android:text="Jl. Pickup Adrress No.5"
                 />
 
-            <View
+            <TextView
                 android:id="@+id/dot_pick"
                 android:layout_width="10dp"
                 android:layout_height="10dp"
                 android:background="@drawable/dot_pickup" />
 
-            <View
+            <TextView
                 android:id="@+id/separator"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
@@ -70,7 +71,7 @@
                 android:text="Jl. Pickup Adrress No.5"
                 />
 
-            <View
+            <TextView
                 android:id="@+id/dot_dropoff"
                 android:layout_width="10dp"
                 android:layout_marginTop="20dp"
@@ -113,7 +114,7 @@
             android:text="5 min" />
 
 
-        <View
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_below="@id/rejectbtn"

@@ -125,7 +125,7 @@
         android:text="Send a request"
         android:id="@+id/sendreqbtn"
         android:textColor="@color/white"
-        android:background="@drawable/white_transparent_background"
+        android:background="@color/fbcolor"
         android:layout_alignParentBottom="true"/>
 
 

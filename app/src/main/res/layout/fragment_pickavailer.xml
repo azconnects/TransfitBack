@@ -3,11 +3,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/app_color"
+    android:padding="10dp"
     tools:context="com.example.azconnects.transfit.Pickavailer">
 
    <RelativeLayout
        android:layout_width="match_parent"
        android:layout_height="300dp"
+       android:id="@+id/rl"
        android:padding="10dp">
 
    <com.google.android.gms.maps.MapView
@@ -21,10 +23,44 @@
    <Button
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
-       android:background="@drawable/white_transparent_background"
+       android:background="@color/fbcolor"
        android:text="Start Ride"
+       android:visibility="gone"
        android:id="@+id/startride"
+       android:layout_marginLeft="20dp"
+       android:layout_marginTop="20dp"
+       android:layout_alignParentBottom="true"
+       android:layout_marginBottom="20dp"
+       android:layout_marginRight="20dp"
        android:textColor="@color/white"
-       android:layout_alignParentBottom="true"/>
+       />
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@color/fbcolor"
+       android:text="End Ride"
+       android:id="@+id/endride"
+       android:visibility="gone"
+       android:layout_marginLeft="20dp"
+       android:layout_marginTop="20dp"
+       android:layout_alignParentBottom="true"
+       android:layout_marginBottom="20dp"
+       android:layout_marginRight="20dp"
+       android:textColor="@color/white"
+       />
+
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+         android:background="@color/fbcolor"
+        android:text="Show Path"
+       android:id="@+id/view_path"
+       android:layout_marginLeft="20dp"
+       android:layout_marginTop="20dp"
+       android:layout_alignParentBottom="true"
+       android:layout_marginBottom="20dp"
+       android:layout_marginRight="20dp"
+       android:textColor="@color/white"
+       />
 
 </RelativeLayout>

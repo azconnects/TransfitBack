@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@color/app_color">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:id="@+id/rl"
+        android:background="@color/white"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter new cell number please:"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:id="@+id/mailtxt"
+        android:textColor="@color/white"
+        android:layout_below="@+id/rl"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="16sp"
+        android:inputType="number"
+        android:layout_marginRight="20dp"
+        android:hint="Enter Mobile Number"
+        android:textAlignment="center"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:layout_below="@+id/mailtxt"
+        android:id="@+id/cellnumber_et"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/cellnumber_et"
+        android:id="@+id/donebtn"
+        android:textColor="@color/white"
+        android:background="@color/fbcolor"
+        android:layout_height="30dp"
+        android:text="Done"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/donebtn"
+        android:id="@+id/cancelbtn"
+        android:textColor="@color/white"
+        android:background="@color/fbcolor"
+        android:layout_height="30dp"
+        android:text="Cancel"/>
+
+</RelativeLayout>

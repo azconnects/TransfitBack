@@ -4,34 +4,50 @@
     tools:showIn="navigation_view">
 
     <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/home_icon"
+            android:title="Home" />
+
         <item
             android:id="@+id/Trip_requests"
             android:icon="@drawable/notification_icon"
             android:title="Trip Requests" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
+            android:id="@+id/Trip_notification"
+            android:icon="@drawable/notification_icon"
+            android:title="Trip Notification" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
+            android:id="@+id/your_rides"
+            android:icon="@drawable/yourrides_icon"
+            android:title="Your Rides" />
         <item
-            android:id="@+id/nav_manage"
+            android:id="@+id/setting"
             android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:title="Setting" />
     </group>
 
     <item android:title="Communicate">
         <menu>
             <item
-                android:id="@+id/nav_share"
+                android:id="@+id/share_app"
                 android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
+                android:title="Share App" />
             <item
-                android:id="@+id/nav_send"
+                android:id="@+id/contact_tranfit"
                 android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+                android:title="Contact Transfit" />
+        </menu>
+    </item>
+
+    <item android:title="Account">
+        <menu>
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/logout_icon"
+                android:title="Logout" />
+
         </menu>
     </item>
 

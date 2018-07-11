@@ -41,11 +41,11 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:layout_marginLeft="20dp"
+            android:background="@color/fbcolor"
             android:layout_marginRight="20dp"
             android:layout_marginTop="80dp"
             android:layout_below="@+id/text"
             android:text="Login"
-            android:background="@drawable/white_transparent_background"
             android:textColor="@color/white"
             android:textSize="18sp" />
 
@@ -54,29 +54,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
+            android:background="@color/fbcolor"
             android:layout_below="@+id/frag_profile_login"
             android:gravity="center"
-            android:background="@drawable/white_transparent_background"
             android:text="Register"
             android:textColor="@color/white"
             android:textSize="18sp" />
 
-        <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Forgot Password?"
-        android:layout_marginTop="20dp"
-        android:layout_below="@+id/frag_profile_register"
-        android:id="@+id/frag_make_profile_forget_pasword"
-        android:textColor="#ffffff"
-        android:layout_centerHorizontal="true"
-        />
+
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:layout_below="@+id/frag_make_profile_forget_pasword"
+            android:layout_below="@+id/frag_profile_register"
             android:gravity="center"
             android:id="@+id/frag_register_linear_extratext"
             android:layout_alignParentBottom="true"

@@ -13,9 +13,10 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.SEND_SMS" />
-    <uses-feature android:name="android.hardware.telephony"
-        android:required="true"/>
 
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="true" />
 
     <application
         android:allowBackup="true"
@@ -24,28 +25,34 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyDwULlZHC-K-GxhbDx6Ade4NorR2DDbrLc" />
-
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
         <activity android:name=".MainActivity" />
-        <activity android:name=".ProfileManagement.SplashActivity">
+        <activity
+            android:name=".ProfileManagement.SplashActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ProfileManagement.ProfileActivity" />
+        <activity
+            android:name=".ProfileManagement.ProfileActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".Main_Menu"
             android:label="@string/title_activity_menu"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
+        <activity android:name=".ProfileManagement.Update_Pic" />
+        <activity android:name=".Update_vehicle" />
+        <activity android:name=".Container" />
+        <activity android:name=".availer_trips"></activity>
     </application>
 
 </manifest>
